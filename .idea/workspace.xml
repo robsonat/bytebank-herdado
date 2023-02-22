@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c955e49e-369a-4d80-9d63-48a7c07efedd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ContaCorrente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ContaPoupanca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Gerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TesteContas.java" afterDir="false" />
+    <list default="true" id="c955e49e-369a-4d80-9d63-48a7c07efedd" name="Changes" comment="brincando com herança e polimorfismo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Administrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SistemaInterno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TesteSistemaInterno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ContaPoupanca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Gerente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TesteFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TesteFuncionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,6 +54,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "Z:/Users/robso/IdeaProjects/bytebank-herdado",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -65,7 +67,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TesteContas">
+  <component name="RunManager" selected="Application.TesteTributaveis">
     <configuration name="TesteContas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.TesteContas" />
       <module name="bytebank-herdado" />
@@ -92,8 +94,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TesteSistemaInterno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.TesteSistemaInterno" />
+      <module name="bytebank-herdado" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteTributaveis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.TesteTributaveis" />
+      <module name="bytebank-herdado" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteTributaveis" />
+        <item itemvalue="Application.TesteSistemaInterno" />
         <item itemvalue="Application.TesteContas" />
         <item itemvalue="Application.TesteFuncionario" />
       </list>
@@ -108,6 +138,18 @@
       <option name="presentableId" value="Default" />
       <updated>1676586660803</updated>
     </task>
+    <task id="LOCAL-00001" summary="brincando com herança e polimorfismo">
+      <created>1676660931524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676660931524</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="brincando com herança e polimorfismo" />
+    <option name="LAST_COMMIT_MESSAGE" value="brincando com herança e polimorfismo" />
   </component>
 </project>

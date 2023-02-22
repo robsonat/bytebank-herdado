@@ -1,25 +1,28 @@
 package org.example;
 
-public class Gerente extends Funcionario {
-    private int senha;
+//Um gerente é um Funcionario, logo, herda da class Funcionario. Ele também implementa a interface Autenticável.
 
-    public Gerente(String nome, String cpf, double salario) {
-        super(nome, cpf, salario);
-    }
+public class Gerente extends Funcionario implements Autenticavel {
 
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
 
-    public boolean autentica(int senha) {
-        if (this.senha == senha) {
-            return true;
-        } else {
-            return false;
-        }
+    private AutenticacaoUtil autenticador;
+
+    public Gerente() {
+        this.autenticador = new AutenticacaoUtil();
     }
 
     public double getBonificacao() {
-        return super.getBonificacao() + super.getSalario();
+        System.out.println("Chamando o método de bonificação do GERENTE!");
+        return super.getSalario();
+    }
+
+    @Override
+    public void setSenha(int senha) {
+        this.autenticador.setSenha(senha);
+    }
+
+    @Override
+    public boolean autentica(int senha) {
+        return this.autenticador.autentica(senha);
     }
 }

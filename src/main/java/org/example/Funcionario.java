@@ -1,17 +1,13 @@
 package org.example;
 
-public class Funcionario {
+public abstract class Funcionario {
 
     private String nome;
     private String cpf;
     private double salario;
 
-    //Constructors
-    public Funcionario(String nome, String cpf, double salario) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.salario = salario;
-    }
+
+
 
     //Getter and Setters
     public String getNome() {
@@ -38,7 +34,5 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public double getBonificacao () {
-        return this.salario * 0.1;
-    }
+    public abstract double getBonificacao () ;
 }
