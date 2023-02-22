@@ -1,7 +1,5 @@
 package org.example;
 
-import java.awt.*;
-
 public class ContaCorrente extends Conta implements Tributavel {
 
     public ContaCorrente(int agencia, int numero) {
@@ -14,9 +12,9 @@ public class ContaCorrente extends Conta implements Tributavel {
     }
 
     @Override
-    public boolean saca(double valor) {
+    public void saca(double valor) {
         double valorASacar = valor + 0.2;
-        return super.saca(valorASacar);
+        super.saca(valorASacar);
     }
 
     @Override
